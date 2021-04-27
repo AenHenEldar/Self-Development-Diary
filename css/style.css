@@ -139,6 +139,10 @@ label {
     display: block;
 }
 
+.morning__list label {
+    cursor: pointer;
+}
+
 .morning__list input {
     margin-right: 8px;
 }
@@ -149,6 +153,10 @@ label {
 
 .morning__goals {
     margin: 20px 0 20px 0;
+}
+
+i.fas {
+    font-size: 18px;
 }
 
 .morning__task {
@@ -178,13 +186,31 @@ label {
     margin-top: 0;
 }
 
+.doings li {
+    position: relative;
+}
+
+.doings li:first-child::before {
+    content: '(насколько это важно)';
+    font-family: 'Roboto Mono', serif;
+    position: absolute;
+    left: 240px;
+    top: 5px;
+}
+
 .job-lvl .main__sub-title,
 .life-lvl .main__sub-title {
     margin-bottom: 5px;
 }
 
+.job-lvl label,
+.life-lvl label {
+    cursor: pointer;
+}
+
 input[type=radio],
 input[type=checkbox] {
+    cursor: pointer;
     border: 1px solid black;
     padding: 0.5em;
     -webkit-appearance: none;
@@ -205,15 +231,15 @@ input[type=checkbox] {
 
 
 
+  /* star icon */
 
-
-  label {
+  .star-container label {
     cursor: pointer;
   }
   
   svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0.15rem;
   }
   
@@ -283,4 +309,10 @@ input[type=checkbox] {
     to {
       color: #d62a9d;
     }
+  }
+
+  .star-container {
+      position: absolute;
+      left: 130px;
+      top: 0;
   }

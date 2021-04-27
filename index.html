@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
 </head>
 <body>
     <div class="logo"><a href="#">ДНЕВНИК</a></div>
@@ -34,7 +36,9 @@
                             <div class="morning__item"><label><input type="checkbox">Зарядка</label></div>
                             <div class="morning__item"><label><input type="checkbox">Медитация</label></div>
                         </div>
-                        <div class="morning__goals">Цели</div>
+                        <div class="morning__goals">Цели
+                            <i class="fas fa-thumbtack"></i>
+                        </div>
                         <label for="goals-today"><div class="main__sub-title">Главные задачи на сегодня:</div></label>
                         <input class="morning__task" id="goals-today" type="text" placeholder="1.............">
                         <input class="morning__task" type="text" placeholder="2.............">
@@ -129,9 +133,117 @@
                         <div class="doings">
                             <label for="doings"><div class="main__sub-title">Что сегодня сделано:</div></label>
                         <ul>
-                            <li><input id="doings" type="text" placeholder="............."></li>
-                            <li><input type="text" placeholder="............."></li>
-                            <li><input type="text" placeholder="............."></li>
+                            <li>
+                                <input id="doings" type="text" placeholder=".............">
+                                <div class="star-source">
+                                    <svg>
+                                           <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                                              <stop stop-color="#bf209f" offset="0%"></stop>
+                                              <stop stop-color="#d62a9d" offset="60%"></stop>
+                                              <stop stop-color="#ED009E" offset="100%"></stop>
+                                          </linearGradient>
+                                      <symbol id="star" viewBox="153 89 106 108">   
+                                        <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                                      </symbol>
+                                  </svg>
+                                  
+                                  </div>
+                                  <div class="star-container">
+                                    <input type="radio" name="star" id="three">
+                                    <label for="three">
+                                      <svg class="star">
+                                        <use xlink:href="#star"/>
+                                      </svg>
+                                    </label>
+                                    <input type="radio" name="star" id="two">
+                                    <label for="two">
+                                      <svg class="star">
+                                        <use xlink:href="#star" />
+                                      </svg>
+                                    </label>
+                                    <input type="radio" name="star" id="one">
+                                    <label for="one">
+                                     <svg class="star">
+                                      <use xlink:href="#star" />
+                                     </svg>
+                                    </label>
+                                  
+                                </div>
+                            </li>
+                            <li>
+                                <input type="text" placeholder=".............">
+                                <div class="star-source">
+                                    <svg>
+                                           <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                                              <stop stop-color="#bf209f" offset="0%"></stop>
+                                              <stop stop-color="#d62a9d" offset="60%"></stop>
+                                              <stop stop-color="#ED009E" offset="100%"></stop>
+                                          </linearGradient>
+                                      <symbol id="star" viewBox="153 89 106 108">   
+                                        <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                                      </symbol>
+                                  </svg>
+                                  
+                                  </div>
+                                  <div class="star-container">
+                                    <input type="radio" name="star" id="three">
+                                    <label for="three">
+                                      <svg class="star">
+                                        <use xlink:href="#star"/>
+                                      </svg>
+                                    </label>
+                                    <input type="radio" name="star" id="two">
+                                    <label for="two">
+                                      <svg class="star">
+                                        <use xlink:href="#star" />
+                                      </svg>
+                                    </label>
+                                    <input type="radio" name="star" id="one">
+                                    <label for="one">
+                                     <svg class="star">
+                                      <use xlink:href="#star" />
+                                     </svg>
+                                    </label>
+                                  
+                                </div>
+                            </li>
+                            <li>
+                                <input type="text" placeholder=".............">
+                                <div class="star-source">
+                                    <svg>
+                                           <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
+                                              <stop stop-color="#bf209f" offset="0%"></stop>
+                                              <stop stop-color="#d62a9d" offset="60%"></stop>
+                                              <stop stop-color="#ED009E" offset="100%"></stop>
+                                          </linearGradient>
+                                      <symbol id="star" viewBox="153 89 106 108">   
+                                        <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
+                                      </symbol>
+                                  </svg>
+                                  
+                                  </div>
+                                  <div class="star-container">
+                                    <input type="radio" name="star" id="three">
+                                    <label for="three">
+                                      <svg class="star">
+                                        <use xlink:href="#star"/>
+                                      </svg>
+                                    </label>
+                                    <input type="radio" name="star" id="two">
+                                    <label for="two">
+                                      <svg class="star">
+                                        <use xlink:href="#star" />
+                                      </svg>
+                                    </label>
+                                    <input type="radio" name="star" id="one">
+                                    <label for="one">
+                                     <svg class="star">
+                                      <use xlink:href="#star" />
+                                     </svg>
+                                    </label>
+                                  
+                                </div>
+                            </li>
                         </ul>
                         </div>
                         <div class="best">
@@ -169,12 +281,18 @@
                             <label for="good-events"><div class="main__sub-title">Что хорошего сегодня произошло:</div></label>
                             <input id="good-events" type="text" placeholder=".............">
                             <input type="text" placeholder=".............">
-                            <input type="text" placeholder=".............">
+                        </div>
+                        <div class="events">
+                            <label for="thank"><div class="main__sub-title">Кого я хочу поблагодарить сегодня:</div></label>
+                            <input id="thank" type="text" placeholder=".............">
+                        </div>
+                        <div class="events">
+                            <label for="thank"><div class="main__sub-title">Какое доброе дело сделано сегодня:</div></label>
+                            <input id="thank" type="text" placeholder=".............">
                         </div>
                         <div class="achs">
-                            <label for="ach"><div class="main__sub-title">Достижения за сегодня:</div></label>
+                            <label for="ach"><div class="main__sub-title">Мои достижения сегодня:</div></label>
                             <input id="ach" type="text" placeholder=".............">
-                            <input type="text" placeholder=".............">
                             <input type="text" placeholder=".............">
                             <input type="text" placeholder=".............">
                         </div>
@@ -188,56 +306,6 @@
                 </div>
             </div>
         </section>
-    </div>
-
-
-
-
-    <div class="star-source">
-        <svg>
-               <linearGradient x1="50%" y1="5.41294643%" x2="87.5527344%" y2="65.4921875%" id="grad">
-                  <stop stop-color="#bf209f" offset="0%"></stop>
-                  <stop stop-color="#d62a9d" offset="60%"></stop>
-                  <stop stop-color="#ED009E" offset="100%"></stop>
-              </linearGradient>
-          <symbol id="star" viewBox="153 89 106 108">   
-            <polygon id="star-shape" stroke="url(#grad)" stroke-width="5" fill="currentColor" points="206 162.5 176.610737 185.45085 189.356511 150.407797 158.447174 129.54915 195.713758 130.842203 206 95 216.286242 130.842203 253.552826 129.54915 222.643489 150.407797 235.389263 185.45085"></polygon>
-          </symbol>
-      </svg>
-      
-      </div>
-      <div class="star-container">
-        <input type="radio" name="star" id="five">
-        <label for="five">
-          <svg class="star">
-            <use xlink:href="#star"/>
-          </svg>
-        </label>
-        <input type="radio" name="star" id="four">
-        <label for="four">
-          <svg class="star">
-            <use xlink:href="#star"/>
-          </svg>
-        </label>
-        <input type="radio" name="star" id="three">
-        <label for="three">
-          <svg class="star">
-            <use xlink:href="#star"/>
-          </svg>
-        </label>
-        <input type="radio" name="star" id="two">
-        <label for="two">
-          <svg class="star">
-            <use xlink:href="#star" />
-          </svg>
-        </label>
-        <input type="radio" name="star" id="one">
-        <label for="one">
-         <svg class="star">
-          <use xlink:href="#star" />
-         </svg>
-        </label>
-      
-    </div>
+    </div>    
 </body>
 </html>

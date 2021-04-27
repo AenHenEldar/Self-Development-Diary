@@ -1,0 +1,45 @@
+@media(max-width: 650px) {
+    .doings li:first-child::before {
+        content: '';
+    }
+    .logo {
+        font-size: 30px;
+    }
+    body {
+        font-size: 12px;
+    }
+    .header a {
+        font-size: 12px;
+    }
+    .header__item:not(:last-child) {
+        padding-right: 8%;
+    }
+}
+
+@media(max-width: 500px) {
+    .star-container {
+        display: none;
+    }
+    .header__item:not(:last-child) {
+        padding-right: 5%;
+    }
+    input[type="text"] {
+        width: 70px;
+    }
+    body {
+        font-size: 10px;
+    }
+    .header a {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 400px) {
+    .header__item:not(:last-child) {
+        padding-right: 4%;
+    }
+}
+
+
+
+
