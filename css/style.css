@@ -16,303 +16,132 @@ a {
 }
 
 body {
-    font-family: 'Roboto Mono', serif;
-    font-weight: 400;
-    line-height: 18px;
-    font-size: 15px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-input[type="text"] {
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 100px;
-}
-
-label {
-    outline: none;
-}
-
-.diary {
-    border: 1px solid black;
-    max-width: 1140px;
-    margin: 20px auto;
-    position: relative;
-}
-
-.header__wrapper {
-    padding: 0 8%;
-}
-
-.logo {
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: 600;
-}
-
-.header {
-    border-bottom: 1px solid #000;
-}
-
-.header a {
-    color: #706f6f;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
     font-size: 16px;
 }
 
-.header__menu ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__item {
-    display: inline-block;
-    text-align: center;
-    height: 75px;
-    padding-top: 30px;
-}
-
-.header__item:nth-child(3) {
-    padding-top: 20px;
-}
-
-.header__item:nth-child(3) p {
-    width: 90px;
-}
-
-.header__item:not(:last-child) {
-    padding-right: 12%;
-    border-right: 1px solid black;
-}
-
-.main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0 20px 20px 20px;
-}
-
-.main__wrapper {
-    border: 1px solid rgb(31, 30, 30);
-    border-radius: 40px;
-    padding: 20px;
-}
-
-.main__left {
-    width: 38%;
-}
-
-.main__right {
-    width: 60%;
-}
-
-.main__title {
-    font-weight: 600;
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.main__sub-title {
-    text-decoration: underline;
-}
-
-.main__sub-title {
-    margin-top: 20px;
-}
-
-.morning__list label,
-.morning__task,
-.day-insight input,
-.best input,
-.events input,
-.achs input,
-.goals input {
-    display: block;
-}
-
-.morning__list label {
-    cursor: pointer;
-}
-
-.morning__list input {
-    margin-right: 8px;
-}
-
-.morning__item {
-    margin-bottom: 8px;
-}
-
-.morning__goals {
-    margin: 20px 0 20px 0;
-}
-
-i.fas {
-    font-size: 18px;
-}
-
-.morning__task {
-    margin-top: 5px;
-}
-
-.to-do-list {
-    margin-top: 20px;
-}
-
-.to-do__item:not(:first-child),
-.habits__item:not(:first-child),
-.day-insight input:not(:first-child),
-.doings li  {
-    margin-top: 5px;
-}
-
-.habits__item input[type="text"] {
-    width: 80px;
-}
-
-.evening li {
-    list-style: inside;
-}
-
-.doings .main__sub-title {
-    margin-top: 0;
-}
-
-.doings li {
+.diary {
     position: relative;
+    padding-left: 280px;
+    padding-right: 20px;
+    min-width: 1440px;
+    margin: 0 auto;
 }
 
-.doings li:first-child::before {
-    content: '(насколько это важно)';
-    font-family: 'Roboto Mono', serif;
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.aside {
     position: absolute;
-    left: 240px;
-    top: 5px;
+    left: 0;
+    top: 0;
+    width: 250px;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.03);
 }
 
-.job-lvl .main__sub-title,
-.life-lvl .main__sub-title {
-    margin-bottom: 5px;
+.aside__logo {
+    display: block;
+    padding: 15px 47px;
+    border-bottom: 1px solid #EBEFF2;
 }
 
-.job-lvl label,
-.life-lvl label {
-    cursor: pointer;
+.aside__size {
+    margin: 40px 0;
 }
 
-input[type=radio],
-input[type=checkbox] {
+.aside__size,
+.aside__item,
+.aside__settings {
+    padding: 18px 15px 18px 75px;
     cursor: pointer;
-    border: 1px solid black;
-    padding: 0.5em;
-    -webkit-appearance: none;
-  }
-  
-  input[type=radio]:checked,
-  input[type=checkbox]:checked {
-    background-color: rgb(98, 98, 240);
-    background-size: 7px 7px;
-  }
-  
-  input[type=radio]:focus,
-  input[type=checkbox] {
-    outline-color: transparent;
-  }
+    position: relative;
+    transition: all 0.1s ease-out;
+}
+
+.aside__item:hover {
+    background-color:rgb(111, 137, 189, 0.08);
+}
 
 
+.aside__settings {
+    font-family: 'Lato', sans-serif;
+    margin-top: 100px;
+}
 
-
-
-  /* star icon */
-
-  .star-container label {
+.aside__exit {
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
-  }
-  
-  svg {
-    width: 25px;
-    height: 25px;
-    padding: 0.15rem;
-  }
-  
-  
-  /* hide radio buttons */
-  
-  input[name="star"] {
-    display: inline-block;
-    width: 0;
-    opacity: 0;
-    margin-left: -2px;
-  }
-  
-  /* hide source svg */
-  
-  .star-source {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-  
-  
-  /* set initial color to transparent so fill is empty*/
-  
-  .star {
-    color: transparent;
-    transition: color 0.2s ease-in-out;
-  }
-  
-  
-  /* set direction to row-reverse so 5th star is at the end and ~ can be used to fill all sibling stars that precede last starred element*/
-  
-  .star-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
-  
-  label:hover ~ label .star,
-  svg.star:hover,
-  input[name="star"]:focus ~ label .star,
-  input[name="star"]:checked ~ label .star {
-    color: #d62a9d;
-  }
-  
-  input[name="star"]:checked + label .star {
-    animation: starred 0.5s;
-  }
-  
-  input[name="star"]:checked + label {
-    animation: scaleup 1s;
-  }
-  
-  @keyframes scaleup {
-    from {
-      transform: scale(1.2);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes starred {
-    from {
-      color: #600040;
-    }
-    to {
-      color: #d62a9d;
-    }
-  }
+    padding: 15px 60px;
+    border: 1px solid #25315B;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #25315B;
+    background-color: #fff;
+    margin: 3px 40px 50px 40px;
+}
 
-  .star-container {
-      position: absolute;
-      left: 130px;
-      top: 0;
-  }
+.aside__size::before,
+.aside__item::before,
+.aside__settings::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-left::before {
+    background: url('../icons/arrow-left.svg') 0 0 no-repeat;
+}
+
+.aside__item_house::before {
+    background: url('../icons/house.svg') 0 0 no-repeat;
+    top: 12px;
+}
+
+.aside__item_diary::before {
+    background: url('../icons/diary.svg') 0 0 no-repeat;
+}
+
+.aside__item_calendar::before {
+    background: url('../icons/calendar.svg') 0 0 no-repeat;
+}
+
+.aside__item_check::before {
+    background: url('../icons/check.svg') 0 0 no-repeat;
+}
+
+.aside__item_lock::before {
+    background: url('../icons/lock.svg') 0 0 no-repeat;
+}
+
+.aside__item_cols::before {
+    background: url('../icons/cols.svg') 0 0 no-repeat;
+    top: 14px;
+}
+
+.aside__item_books::before {
+    background: url('../icons/books.svg') 0 0 no-repeat;
+    top: 28px;
+}
+
+.aside__settings_settings::before {
+    background: url('../icons/settings.svg') 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+

@@ -13,18 +13,18 @@
 //     }
 // })
 
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-.then(response => response.json())
-.then(json => console.log(json))
-.catch(() => console.log("Error"));
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+// .then(response => response.json())
+// .then(json => console.log(json))
+// .catch(() => console.log("Error"));
 
-fetch("https://jsonplaceholder.typicode.com/posts", {
-method: "POST",
-body: JSON.stringify({name: "Eldar"}),
-headers: {
-    'Content-type': 'application/json'
-}
-})
-.then(response => response.json())
-.then(json => console.log(json))
-.catch(() => console.log("Error"));
+// fetch("https://jsonplaceholder.typicode.com/posts1", {
+// method: "POST",
+// body: JSON.stringify({name: "Eldar"}),
+// headers: {
+//     'Content-type': 'application/json'
+// }
+// })
+// .then(response => response.json())
+// .then(json => console.log(json))
+// .catch(() => console.log("Error"));
