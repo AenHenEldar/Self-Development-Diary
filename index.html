@@ -50,16 +50,38 @@
         </div>
 
         <header class="header">
-            <a href="#" class="aside__logo logo">Дневник</a>
-            <div class="aside__item">
-                Список книг и фильмов
+            <div class="header__wrapper">
+                <a href="#" class="logo header__logo">Дневник</a>
+                <div class="header__list">
+                    <div class="header__item header__active">Утренний</div>
+                    <div class="header__item">Вечерний</div>
+                    <div class="header__item header__search"></div>
+                    <div class="header__item header__notif"></div>
+                    <div class="header__item header__profile-name">Ксюша Донская</div>
+                    <div class="header__item header__profile"><img src="img/profile.png" alt="profile"></div>
+                </div>
             </div>
-        <div class="aside__settings">
-            Настройки
-        </div>
-        <button class="aside__exit">Выйти</button>
-        <span class="sex"></span>
         </header>
+
+        <main class="main">
+            <section class="main__block">
+                <div class="main__goals">
+                    <div class="title">Цели дня</div>
+                    <div class="check">Стакан воды</div>
+                    <div class="check">Утренняя зарядка</div>
+                    <div class="check">15 минут медитации</div>
+                </div>
+                <div class="main__tasks">
+                    <div class="title">Главные задачи дня</div>
+                    <div class="check">Задача 1</div>
+                    <div class="check">Задача 2</div>
+                    <div class="check">Задача 3</div>
+                </div>
+            </section>
+            <section class="main__block"></section>
+            <section class="main__block"></section>
+            <section class="main__block"></section>
+        </main>
     </div>
 
     <script src='js/script.js'></script>

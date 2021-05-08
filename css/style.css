@@ -21,13 +21,12 @@ body {
     font-weight: normal;
     line-height: 20px;
     font-size: 16px;
+    background: #f6f5fa;
 }
 
 .diary {
     position: relative;
-    padding-left: 280px;
-    padding-right: 20px;
-    min-width: 1440px;
+    padding-left: 250px;
     margin: 0 auto;
 }
 
@@ -42,6 +41,7 @@ body {
     left: 0;
     top: 0;
     width: 250px;
+    background-color: #fff;
     box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.03);
 }
 
@@ -136,6 +136,88 @@ body {
 
 .aside__settings_settings::before {
     background: url('../icons/settings.svg') 0 0 no-repeat;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header__wrapper {
+    max-width: 1189px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 25px 8px 77px;
+}
+
+.header__logo {
+    line-height: 40px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #25315B;
+}
+
+.header__item {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header__search,
+.header__notif {
+    background: url('../icons/search.svg') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.header__search {
+    margin-left: 35px;
+}
+
+.header__notif {
+    background: url('../icons/notif.svg') 0 0 no-repeat;
+    margin-right: 50px;
+}
+
+.header__profile-name {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.header__profile {
+    width: 44px;
+    height: 44px;
+}
+
+.header__active {
+    padding-top: 3px;
+    font-weight: bold;
+    border-bottom: 3px solid #6CFFD5;
+}
+
+.main {
+    padding: 30px 30px 40px 30px;
+    background: #f6f5fa;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__block {
+    width: 638px;
+    height: 340px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 35px;
+}
+
+.main__block:nth-child(2), 
+.main__block:nth-child(3) {
+    width: 450px;
 }
 
 
