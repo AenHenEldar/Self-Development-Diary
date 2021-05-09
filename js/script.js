@@ -1,23 +1,34 @@
 "use strict"
 
-let body = document.querySelectorAll("body"),
-    checks = document.querySelectorAll(".main__check-left"),
-    habitChecks = document.querySelectorAll(".main__check"),
-    dayMode = document.querySelector(".header__day"),
-    nightMode = document.querySelector(".header__night");
+let body = document.querySelector("body"),
+    diary = body.querySelector(".diary"),
+    checks = body.querySelectorAll(".main__check-left"),
+    habitChecks = body.querySelectorAll(".main__check"),
+    starChecks = body.querySelectorAll(".main__star"),
+    dayMode = body.querySelector(".header__day"),
+    nightMode = body.querySelector(".header__night"),
+    asideSize = body.querySelector(".aside__size"),
+    aside = body.querySelector(".aside");
 
 console.log(checks);
 
 checks.forEach(check => check.addEventListener('click', () => check.classList.toggle("main__checked")));
 habitChecks.forEach(check => check.addEventListener('click', () => check.classList.toggle("main__checked")));
+starChecks.forEach(check => check.addEventListener('click', () => check.classList.toggle("main__checked")));
 
 nightMode.addEventListener('click', () => {
     dayMode.classList.remove('header__active');
     nightMode.classList.add('header__active');
+    body.classList.add('darkMode');
 });
 dayMode.addEventListener('click', () => {
     dayMode.classList.add('header__active');
     nightMode.classList.remove('header__active');
+    body.classList.remove('darkMode');
+});
+
+asideSize.addEventListener('click', () => {
+    diary.classList.toggle("small");
 });
 
 
