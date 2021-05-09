@@ -11,8 +11,7 @@ li {
 a {
     display: inline-block;
     text-decoration: none;
-    color: black;
-    font-weight: 600;
+    color: #25315B;
 }
 
 body {
@@ -22,6 +21,7 @@ body {
     line-height: 20px;
     font-size: 16px;
     background: #f6f5fa;
+    color: #25315B;
 }
 
 .diary {
@@ -66,6 +66,7 @@ body {
 
 .aside__item:hover {
     background-color:rgb(111, 137, 189, 0.08);
+    border-right: 3px solid #3175D6;
 }
 
 
@@ -169,8 +170,8 @@ body {
 .header__search,
 .header__notif {
     background: url('../icons/search.svg') 0 0 no-repeat;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 
 .header__search {
@@ -180,6 +181,7 @@ body {
 .header__notif {
     background: url('../icons/notif.svg') 0 0 no-repeat;
     margin-right: 50px;
+    margin-bottom: 5px;
 }
 
 .header__profile-name {
@@ -199,6 +201,10 @@ body {
     border-bottom: 3px solid #6CFFD5;
 }
 
+.header__night.header__active {
+    color: #DDE2FF;
+}
+
 .main {
     padding: 30px 30px 40px 30px;
     background: #f6f5fa;
@@ -213,11 +219,112 @@ body {
     background-color: #fff;
     margin: 10px;
     padding: 35px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #25315B;
+    position: relative;
 }
 
 .main__block:nth-child(2), 
 .main__block:nth-child(3) {
     width: 450px;
+}
+
+.main__block:first-child {
+    background: url(../img/bg/block1.svg) bottom 45px right 20px no-repeat, #fff;
+}
+
+.main__block:last-child {
+    background: url(../img/bg/block4.svg) bottom 30px right -35px no-repeat, #fff;
+}
+
+.main__block::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    width: 20px;
+    height: 20px;
+    background: url(../icons/pencil.svg) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.main__title {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    color: #25315B;
+    margin-bottom: 15px;
+}
+
+.main__goals {
+    margin-bottom: 25px;
+}
+
+.main__check-left:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.main__check-left {
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main__check-left::before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    background: url("../icons/checkbox.png") 0 0 no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.main__checked::before {
+    background: url("../icons/checked.svg") 0 0 no-repeat;
+}
+
+.main__insight p {
+    max-width: 321px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main__habits .main__check::after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 21px;
+    height: 20px;
+    background: url("../icons/checkbox.svg") 0 0 no-repeat, url("../icons/checkbox.svg");
+}
+
+.main__habit:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.main__habit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__check-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__check {
+    width: 21px;
+    height: 20px;
+    background: url("../icons/checkbox.png") 0 0 no-repeat;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.main__check.main__checked {
+    background: url("../icons/checked.svg") 0 0 no-repeat;
 }
 
 

@@ -1,5 +1,27 @@
 "use strict"
 
+let body = document.querySelectorAll("body"),
+    checks = document.querySelectorAll(".main__check-left"),
+    habitChecks = document.querySelectorAll(".main__check"),
+    dayMode = document.querySelector(".header__day"),
+    nightMode = document.querySelector(".header__night");
+
+console.log(checks);
+
+checks.forEach(check => check.addEventListener('click', () => check.classList.toggle("main__checked")));
+habitChecks.forEach(check => check.addEventListener('click', () => check.classList.toggle("main__checked")));
+
+nightMode.addEventListener('click', () => {
+    dayMode.classList.remove('header__active');
+    nightMode.classList.add('header__active');
+});
+dayMode.addEventListener('click', () => {
+    dayMode.classList.add('header__active');
+    nightMode.classList.remove('header__active');
+});
+
+
+
 // fetch("127.0.0.1:8000/morningBlock")
 // .then(res => res.json())
 // .then(json => console.log(json))
