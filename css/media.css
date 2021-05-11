@@ -1,0 +1,186 @@
+/* @media(max-width: 1000px) {
+    .header__profile-name,
+    .header__logo {
+        display: none;
+    }
+}
+@media(max-width: 750px) {
+    .header__profile-name,
+    .header__logo,
+    .header__search,
+    .header__notif {
+        display: none;
+    }
+    .aside__item_search
+    .aside__item_notif {
+        display: block;
+    }
+    .main__block:first-child,
+    .main__block:last-child,
+    .darkMode .main__block:first-child,
+    .darkMode .main__block:last-child {
+        background-image: none;
+    }
+}
+@media(max-width: 650px) {
+    .aside {
+        z-index: 33;
+    }
+    .diary {
+        padding-left: 95px;
+    }
+    .main__habit {
+        display: block;
+    }
+    .main__check,
+    .main__check-left::before,
+    .main__star {
+        transform: scale(0.7);
+        margin: 0;
+    }
+}
+@media(max-width: 500px) {
+    .header__day span,
+    .header__night span {
+        display: none;
+    }
+    .header__day::after {
+        content: "У";
+    }
+    .header__night::after {
+        content: "В";
+    }
+    .main__check-container {
+        margin-top: 5px;
+        margin-left: -3px;
+    }
+    body,
+    a,
+    .main__label,
+    .main__check-left {
+        font-size: 13.5px;
+    }
+    .main__title {
+        font-size: 16px;
+    }
+    
+} */
+
+@media(max-width: 1000px) {
+    .header__profile-name,
+    .header__search,
+    .header__notif {
+        display: none;
+    }
+    .aside__item_search,
+    .aside__item_notif {
+        display: block;
+    }
+    .aside__settings {
+        margin-top: 40px;
+    }
+}
+@media(max-width: 850px) {
+    body,
+    a,
+    .main__label,
+    .main__check-left {
+        font-size: 14px;
+    }
+    .main__title {
+        font-size: 18px;
+    }
+    .main__block:first-child,
+    .main__block:last-child,
+    .darkMode .main__block:first-child,
+    .darkMode .main__block:last-child {
+        background-image: none;
+    }
+}
+@media(max-width: 850px) {
+    body,
+    a,
+    .main__label,
+    .main__check-left {
+        font-size: 14px;
+    }
+    .main__title {
+        font-size: 18px;
+    }
+    .main__block:first-child,
+    .main__block:last-child,
+    .darkMode .main__block:first-child,
+    .darkMode .main__block:last-child {
+        background-image: none;
+    }
+}
+@media(max-width: 750px) {
+    .aside {
+        z-index: 33;
+    }
+    .diary {
+        padding-left: 95px;
+    }
+}
+@media(max-width: 600px) {
+    .header__logo {
+        display: none;
+    }
+    .main__habit {
+        display: block;
+    }
+    .main__habit .main__check:first-child {
+        margin-left: 0;
+    }
+    .main__habit .main__check,
+    .main__job-lvl .main__check,
+    .main__life-lvl .main__check {
+        margin-top: 10px;
+    }
+    .main__job-lvl .main__check,
+    .main__life-lvl .main__check {
+        margin-left: 0;
+    }
+    .main__job-lvl .main__check-container,
+    .main__life-lvl .main__check-container {
+        display: block;
+    }
+    .main__job-lvl .main__title,
+    .main__life-lvl .main__title {
+        width: auto;
+    }
+}
+@media(max-width: 450px) {
+    .header__day span,
+    .header__night span {
+        display: none;
+    }
+    .header__day::after {
+        content: "У";
+    }
+    .header__night::after {
+        content: "В";
+    }
+    .main__habit .main__check-container {
+        flex-wrap: wrap;
+    }
+    body,
+    a,
+    .main__label,
+    .main__check-left {
+        font-size: 12px;
+    }
+    .main__title {
+        font-size: 15px;
+    }
+}
+@media(max-width: 400px) {
+    .main__task {
+        display: block;
+    }
+    .main__task .main__label {
+        margin-bottom: 10px;
+    }
+}
+
+

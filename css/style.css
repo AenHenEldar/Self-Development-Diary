@@ -54,7 +54,9 @@ body {
 /*Beg  small aside menu */
 
 .small .aside span,
-.small  .aside__exit {
+.small  .aside__exit,
+.aside__item_search,
+.aside__item_notif {
     display: none;
 }
 
@@ -175,6 +177,14 @@ body {
     top: 28px;
 }
 
+.aside__item_search::before {
+    background: url('../icons/search.svg') 0 0 no-repeat;
+}
+
+.aside__item_notif::before {
+    background: url('../icons/notif.svg') 0 0 no-repeat;
+}
+
 .aside__settings_settings::before {
     background: url('../icons/settings.svg') 0 0 no-repeat;
 }
@@ -254,7 +264,7 @@ body {
 
 .main__block {
     width: 638px;
-    height: 340px;
+    min-height: 340px;
     border-radius: 15px;
     background-color: #fff;
     margin: 10px;
@@ -341,7 +351,6 @@ body {
 
 .main__check-container {
     display: flex;
-    justify-content: space-between;
 }
 
 .main__check {
@@ -455,10 +464,12 @@ body.darkMode,
     background-image: url("../icons/dark/checked.svg");
 }
 
-.darkMode .header__search {
+.darkMode .header__search,
+.darkMode .aside__item_search::before {
     background-image: url('../icons/dark/search.svg');
 }
-.darkMode .header__notif {
+.darkMode .header__notif,
+.darkMode .aside__item_notif::before {
     background-image: url('../icons/dark/notif.svg');
 }
 
